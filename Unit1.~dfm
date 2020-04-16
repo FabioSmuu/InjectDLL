@@ -1,0 +1,137 @@
+object Form1: TForm1
+  Left = 845
+  Top = 348
+  BorderIcons = [biSystemMenu, biMinimize]
+  BorderStyle = bsSingle
+  Caption = 'InjectDLL'
+  ClientHeight = 211
+  ClientWidth = 208
+  Color = clWindow
+  Ctl3D = False
+  Font.Charset = ANSI_CHARSET
+  Font.Color = clWindowText
+  Font.Height = -13
+  Font.Name = 'Modern No. 20'
+  Font.Style = []
+  OldCreateOrder = False
+  OnActivate = FormActivate
+  PixelsPerInch = 120
+  TextHeight = 15
+  object Edit1: TEdit
+    Left = 0
+    Top = 0
+    Width = 121
+    Height = 21
+    TabOrder = 0
+    Text = 'exemplo.exe'
+    OnClick = Edit1Click
+  end
+  object Button1: TButton
+    Left = 128
+    Top = 8
+    Width = 75
+    Height = 25
+    Caption = 'Injetar'
+    Enabled = False
+    TabOrder = 1
+    OnClick = Button1Click
+  end
+  object Button2: TButton
+    Left = 128
+    Top = 96
+    Width = 75
+    Height = 25
+    Caption = 'Add'
+    TabOrder = 2
+    OnClick = Button2Click
+  end
+  object Button3: TButton
+    Left = 128
+    Top = 128
+    Width = 75
+    Height = 25
+    Caption = 'Remover'
+    TabOrder = 3
+    OnClick = Button3Click
+  end
+  object Button4: TButton
+    Left = 128
+    Top = 160
+    Width = 75
+    Height = 25
+    Caption = 'Limpar'
+    TabOrder = 4
+    OnClick = Button4Click
+  end
+  object ListBox1: TListBox
+    Left = 0
+    Top = 24
+    Width = 121
+    Height = 97
+    ItemHeight = 15
+    TabOrder = 5
+  end
+  object StatusBar1: TStatusBar
+    Left = 0
+    Top = 192
+    Width = 208
+    Height = 19
+    Panels = <
+      item
+        Text = 'Criado por Smuu'
+        Width = 125
+      end
+      item
+        Text = '0 DLLs'
+        Width = 50
+      end>
+  end
+  object GroupBox1: TGroupBox
+    Left = 0
+    Top = 128
+    Width = 121
+    Height = 57
+    Caption = 'Apos Injetar DLL'
+    TabOrder = 7
+    object RadioButton2: TRadioButton
+      Left = 8
+      Top = 32
+      Width = 105
+      Height = 17
+      Caption = 'Manter Aberto'
+      Checked = True
+      TabOrder = 0
+      TabStop = True
+    end
+    object RadioButton1: TRadioButton
+      Left = 8
+      Top = 16
+      Width = 105
+      Height = 17
+      Caption = 'Fechar Injetor'
+      TabOrder = 1
+      OnClick = RadioButton1Click
+    end
+  end
+  object ListBox2: TListBox
+    Left = 0
+    Top = 0
+    Width = 208
+    Height = 192
+    Align = alClient
+    ItemHeight = 15
+    TabOrder = 8
+    OnDblClick = ListBox2DblClick
+  end
+  object Timer1: TTimer
+    Enabled = False
+    Interval = 1
+    OnTimer = Timer1Timer
+    Left = 88
+    Top = 72
+  end
+  object OpenDialog1: TOpenDialog
+    Left = 48
+    Top = 48
+  end
+end
