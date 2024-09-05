@@ -1,4 +1,4 @@
-# Software para hookar dll feito no delphi7
+# Hook dll feito no delphi7
 
 Desenvolvi este "injetor de dll" a muito tempo, quando eu usava delphi7.
 
